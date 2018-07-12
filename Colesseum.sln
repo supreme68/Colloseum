@@ -7,6 +7,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Colosseum", "Colosseum\Colo
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Colosseum.Gladiators", "Colosseum.Gladiators\Colosseum.Gladiators.csproj", "{D455DC5F-4AAF-4622-ACA2-4EC2335D209A}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Colosseum.Runtime", "Colosseum.Runtime\Colosseum.Runtime.csproj", "{0C538387-757B-4F48-A1A4-90D58A8DB12C}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -21,6 +23,10 @@ Global
 		{D455DC5F-4AAF-4622-ACA2-4EC2335D209A}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{D455DC5F-4AAF-4622-ACA2-4EC2335D209A}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{D455DC5F-4AAF-4622-ACA2-4EC2335D209A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{0C538387-757B-4F48-A1A4-90D58A8DB12C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0C538387-757B-4F48-A1A4-90D58A8DB12C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0C538387-757B-4F48-A1A4-90D58A8DB12C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0C538387-757B-4F48-A1A4-90D58A8DB12C}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
