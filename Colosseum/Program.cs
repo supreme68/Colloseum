@@ -5,7 +5,7 @@ using System.Linq;
 using System.Runtime.InteropServices;
 using System.Text;
 using System.Threading.Tasks;
-using Colosseum.Runtime;
+using Colosseum.Data;
 
 namespace Colosseum
 {
@@ -24,24 +24,26 @@ namespace Colosseum
             Console.WriteLine("Retarius --> press R on the keyboard to pick this gladiator");
             Console.WriteLine("Myrmillonis --> press M on the keyboard to pick this gladiator");
 
-            //UI for First Gladiator
-            var firstKeyInput = Console.ReadKey(true);
+            ////UI for First Gladiator
+            //var firstKeyInput = Console.ReadKey(true);
 
-            var firstGladiator = BattleRuntime.SelectGladiatorByKeyInput(firstKeyInput.Key);
-            
-            Console.WriteLine("You have picked" + firstGladiator.Name);
-            
-            //UI for Second Gladiator
-            var secondKeyInput = Console.ReadKey(true);
+            //var firstGladiator = BattleRuntime.SelectGladiatorByKeyInput(firstKeyInput.Key);
 
-            var secondGladiator = BattleRuntime.SelectGladiatorByKeyInput(secondKeyInput.Key);
+            //Console.WriteLine("You have picked " + firstGladiator.Name);
 
-            Console.WriteLine("You have picked" + secondGladiator.Name);
-            
-            //Battle Start-up
-            BattleRuntime.BeginFight(firstGladiator, secondGladiator);
+            ////UI for Second Gladiator
+            //var secondKeyInput = Console.ReadKey(true);
 
-            Console.ReadKey();
+            //var secondGladiator = BattleRuntime.SelectGladiatorByKeyInput(secondKeyInput.Key);
+
+            //Console.WriteLine("You have picked " + secondGladiator.Name);
+
+            ////Battle Start-up
+            //BattleRuntime.BeginFight(firstGladiator, secondGladiator);
+
+            //Console.ReadKey();
+
+            GladiatorData.CreateGladiator("keadass", 10, 100, 10, 10, ConsoleKey.K);
         }
     }
 }

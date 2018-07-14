@@ -57,6 +57,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="BattleRuntime.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
@@ -76,13 +77,9 @@
     </BootstrapperPackage>
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\Colosseum.Gladiators\Colosseum.Gladiators.csproj">
+    <ProjectReference Include="..\Colosseum.Data\Colosseum.Data.csproj">
       <Project>{d455dc5f-4aaf-4622-aca2-4ec2335d209a}</Project>
-      <Name>Colosseum.Gladiators</Name>
-    </ProjectReference>
-    <ProjectReference Include="..\Colosseum.Runtime\Colosseum.Runtime.csproj">
-      <Project>{0c538387-757b-4f48-a1a4-90d58a8db12c}</Project>
-      <Name>Colosseum.Runtime</Name>
+      <Name>Colosseum.Data</Name>
     </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
