@@ -8,7 +8,7 @@
 
 # Installing
 
-1.  You can download the .exe file from [here](https://drive.google.com/open?id=1T88BiPCSwmJ2gch4LFq6bCiyMztsRJqJ)
+1.  You can download the .exe file from [here](https://drive.google.com/open?id=1P0X5YQRlKF0HC7YKw0wCU7r23JtZV_xJ)
 2.  Your can download Visual Studio 2017 and build it from there [download link](https://visualstudio.microsoft.com/downloads/)
 
 # Build With

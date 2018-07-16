@@ -3,7 +3,7 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 15
 VisualStudioVersion = 15.0.27428.2015
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Colosseum.Start", "Colosseum\Colosseum.Start.csproj", "{B3A7DB7B-08B7-4269-A6B3-BC91930BD45C}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Colosseum", "Colosseum\Colosseum.csproj", "{B3A7DB7B-08B7-4269-A6B3-BC91930BD45C}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Colosseum.Data", "Colosseum.Data\Colosseum.Data.csproj", "{D455DC5F-4AAF-4622-ACA2-4EC2335D209A}"
 EndProject

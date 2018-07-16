@@ -5,7 +5,7 @@ using System.Text;
 using System.Threading.Tasks;
 using Colosseum.Data;
 
-namespace Colosseum.Start
+namespace Colosseum
 {
     class BattleEngine
     {
