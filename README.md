@@ -1,6 +1,5 @@
 # Colloseum
-    I want to point out that this is an early version and changes will be added frequently if you want to make suqestions send me an email at dimitararnaudov68@gmail.com
-    Colloseum is a shell game where you play as a ancient roman Lanist.Your job is to pick gladiator and make them fight to the dead.You can train your own gladiators by picking their names and stats.
+I want to point out that this is an early version and changes will be added frequently if you want to make sugestions send me an email at dimitararnaudov68@gmail.com
 
 # Getting Started
 
