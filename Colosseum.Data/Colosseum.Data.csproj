@@ -43,7 +43,6 @@
     <Compile Include="GladiatorDB.cs" />
     <Compile Include="GladiatorData.cs" />
     <Compile Include="GladiatorTemplate.cs" />
-    <Compile Include="TextGenerator\Ipsum.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
