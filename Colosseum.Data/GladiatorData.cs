@@ -3,63 +3,46 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
-using System.IO;
-using Newtonsoft.Json;
-using Newtonsoft.Json.Linq;
 
 namespace Colosseum.Data
 {
     public class GladiatorData
     {
-        //Creates Custom Gladiator
-        public static void SelectGladiatorByKeyInput(ConsoleKey key)
+        //Selects Gladiator By Key Input
+        public static GladiatorTemplate SelectGladiatorByKeyInput(ConsoleKey key)
         {
+            var gladiatorDb = GladiatorDB.AllGladiators();
 
+            var gladiator = (from g in gladiatorDb
+                             where g.Key == key
+                             select g).FirstOrDefault();
+
+            return gladiator;
         }
 
-        //public static GladiatorTemplate SelectGladiator()
-        //{
-        //    var gladiatorBase = Gladiators.GladiatorData.BaseGladiators();
-
-        //    var gladiator = (from g in gladiatorBase
-        //                     where g.Key == key
-        //                     select g).FirstOrDefault();
-
-        //    return gladiator;
-        //}
-
-        //Creates a gladiator to the JSON file.
-        public static void CreateGladiator(string name, int hp, int atk, int def, int ctd, ConsoleKey key)
+        public static List<GladiatorTemplate> SelectAllGladiators()
         {
-            using (var file = File.CreateText("Gladiators.json"))
-            using (JsonTextWriter writer = new JsonTextWriter(file))
+            var gladiatorDb = GladiatorDB.AllGladiators();
+
+            var gladiators = (from g in gladiatorDb
+                              select g).ToList();
+
+            return gladiators;
+        }
+
+        //Creates new Gladiator
+        public static GladiatorTemplate CreateGladiator(string name, int hp, int ap, int def, int ctd)
+        {
+            var gladiatorInstance = new GladiatorTemplate
             {
-                var gladiator = new GladiatorTemplate
-                {
-                    Name = name,
-                    Hp = hp,
-                    Def = def,
-                    Ctd = ctd,
-                    Key = key.ToString()
-                };
+                Name = name,
+                Hp = hp,
+                Ap = ap,
+                Def = def,
+                Ctd = ctd
+            };
 
-                var serializedGladiators = JsonConvert.SerializeObject(gladiator);
-
-                JObject jsonObject = new JObject { "Gladiators", new JArray { JObject.Parse(serializedGladiators) } };
-
-                jsonObject.WriteTo(writer);
-
-
-
-
-
-
-                //writeStream.Write(serializedGladiators);
-                //writeStream.Close();
-                //var writeStream = new WriteStream();
-
-                //File.WriteAllText(@"Gladiators.json", serializedGladiators);
-            }
+            return gladiatorInstance;
         }
     }
 }

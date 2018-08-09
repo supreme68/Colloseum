@@ -7,8 +7,8 @@
     <ProjectGuid>{D455DC5F-4AAF-4622-ACA2-4EC2335D209A}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>Colosseum.Gladiators</RootNamespace>
-    <AssemblyName>Colosseum.Gladiators</AssemblyName>
+    <RootNamespace>Colosseum.Data</RootNamespace>
+    <AssemblyName>Colosseum.Data</AssemblyName>
     <TargetFrameworkVersion>v4.7.1</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
   </PropertyGroup>
@@ -30,9 +30,6 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
-    <Reference Include="Newtonsoft.Json, Version=11.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed, processorArchitecture=MSIL">
-      <HintPath>..\packages\Newtonsoft.Json.11.0.2\lib\net45\Newtonsoft.Json.dll</HintPath>
-    </Reference>
     <Reference Include="System" />
     <Reference Include="System.Core" />
     <Reference Include="System.Xml.Linq" />
@@ -43,8 +40,10 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="GladiatorDB.cs" />
     <Compile Include="GladiatorData.cs" />
     <Compile Include="GladiatorTemplate.cs" />
+    <Compile Include="TextGenerator\Ipsum.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
